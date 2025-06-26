@@ -3,16 +3,10 @@ pipeline {
 
     environment {
         IMAGE_NAME = "pavlovskyiandrii/step_project2"
-        DOCKER_HUB_CREDENTIALS = 'dockerhub-creds-id' // ID из Jenkins Credentials
+        DOCKER_HUB_CREDENTIALS = 'dockerhub-creds-id' // ID из Jenkins Cred.
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Pavlovskyi-Andrii/Step_project2.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
