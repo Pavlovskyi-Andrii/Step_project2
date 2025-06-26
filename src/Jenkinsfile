@@ -2,7 +2,7 @@ pipeline {
     agent any 
 
     environment {
-        IMAGE_NAME = "pavlovskyiandrii/step_project2"
+        IMAGE_NAME = "devasher/step_project2"
         DOCKER_HUB_CREDENTIALS = 'dockerhub-creds-id' // ID из Jenkins Cred.
     }
 
